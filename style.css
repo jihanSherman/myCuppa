@@ -1,0 +1,286 @@
+h1 {
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    color: #582417;
+    text-transform: uppercase;
+    margin-top: 0.25em;
+}
+
+p {
+    font-family: Andale Mono, serif;
+    font-size: 1em;
+    color: #F4AB2C;
+    padding-left: 10px;
+}
+
+.container{
+    display: block;
+    position: relative;
+    margin: 40px auto;
+    height: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.machine {
+    background-color: #F5EDC4;
+    padding: 40px;
+    min-height: 1000px;
+}
+
+.cuppaLeft {
+    float: left;
+    width: 60%;
+}
+
+.cuppaRight {
+    float: right;
+    width: 40%;
+}
+
+.cuppaType {
+    padding: 20px;
+}
+
+.cuppaBase {
+    padding-bottom: 25px;
+}
+
+.cuppaDisplay {
+    height: auto;
+    min-height: 420px;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 25px;
+    background-color: #582417;
+}
+
+.cuppa {
+    min-height: 340px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+/* Button styles */
+.button {
+    background-color: #038EB2;
+    border-color: #37627B;
+    padding: 1em;
+    margin-right: 3.5em;
+    margin-bottom: 2em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+    min-width: 150px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #F4AB2C;
+}
+
+.gulp {
+    position: absolute;
+    top: 62%;
+    left: 71%;
+    width: 100%;
+    height: auto;
+}
+
+.buttonGulp {
+    background-color: #038EB2;
+    border-color: #37627B;
+    padding: 1em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+    min-width: 75px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.buttonGulp:hover {
+    background-color: #F4AB2C;
+}
+
+.reset {
+    float: right;
+    min-height: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.buttonReset {
+    background-color: #038EB2;
+    border-color: #37627B;
+    padding: 1em;
+    margin-right: 2em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+    min-width: 75px;
+    cursor: pointer;
+}
+
+.buttonReset:hover {
+    background-color: #F4AB2C;
+}
+
+
+
+/* Radio Input style */
+.container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+ul li{
+    color: #038EB2;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+ul li input[type=radio]{
+    position: absolute;
+    margin: 27px 15px 27px 11px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+ul li label{
+    display: block;
+    position: relative;
+    font-family: Andale Mono, serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 10px 10px 10px 15px;
+    margin: 10px 10px 10px 50px;
+    height: 1.5em;
+    color: #F4AB2C;
+    width: 70%;
+    background-color: #582417;
+    z-index: 9;
+    -webkit-transition: all 0.25s linear;
+}
+
+ul li:hover label{
+}
+
+ul li .check{
+    display: block;
+    position: absolute;
+    background-color: #038EB2;
+    border: 1px solid #37627B;
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+    top: 17px;
+    left: 0;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+ul li:hover .check {
+    background-color: #F4AB2C;
+}
+
+ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+    background-color: #F4AB2C;
+}
+
+input[type=radio]:checked ~ .check::before{
+    background-color: #F4AB2C;
+}
+
+.footer {
+    background-color: #BC6B28;
+    height: 75px;
+}
+
+
+/* Responsive Media Styling */
+@media only screen and (max-width: 800px) {
+    .cuppaTitle {
+        text-align: center;
+    }
+
+    .machine {
+        min-height: 2200px;
+    }
+
+    .cuppaLeft {
+        float: none;
+        width: 100%;
+    }
+
+    .cuppaRight {
+        float: none;
+        width: 100%;
+    }
+
+    .cuppaBase {
+      margin: 25px;
+    }
+
+    .button {
+        width: 100%;
+
+    }
+
+    ul li label{
+        height: 2.5em;
+    }
+
+    .cuppaFixins {
+        margin: 25px;
+    }
+
+    .gulp {
+        top: 70%;
+        left: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .machine {
+    }
+
+    .gulp {
+        top: 56%;
+        left: 41%;
+    }
+    .buttonGulp {
+        padding: 1.20em
+    }
+
+}
