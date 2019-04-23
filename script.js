@@ -93,6 +93,7 @@ function noSugar(){
     console.log(sugarText[sugarCount]);
     document.getElementById("sugarTextLine").innerHTML = sugarText[0];
     document.getElementById("sugarButtonText").innerHTML = "ADD SUGAR";
+    document.getElementById("subtotalLine").innerHTML = "Sugars Added: " + sugarCount + "/3";
 }
 
 // sets 0 cream, displays third poem line
@@ -102,6 +103,8 @@ function noCream(){
     console.log(creamText[creamCount]);
     document.getElementById("creamTextLine").innerHTML = creamText[0];
     document.getElementById("creamButtonText").innerHTML = "ADD CREAM";
+    document.getElementById("taxLine").innerHTML = "Creams Added: " + creamCount + "/3";
+
 }
 
 // adds 1 sugar, displays second poem line
@@ -114,6 +117,7 @@ function addSugar() {
     console.log(sugarText[sugarCount]);
     document.getElementById("sugarTextLine").innerHTML = sugarText[sugarCount];
     document.getElementById("sugarButtonText").innerHTML = "ADD MORE SUGAR";
+    document.getElementById("subtotalLine").innerHTML = "Sugars Added: " + sugarCount + "/3";
 }
 
 // adds 1 cream, displays third poem line
@@ -126,6 +130,7 @@ function addCream() {
     console.log(creamText[creamCount]);
     document.getElementById("creamTextLine").innerHTML = creamText[creamCount];
     document.getElementById("creamButtonText").innerHTML = "ADD MORE CREAM";
+    document.getElementById("taxLine").innerHTML = "Creams Added: " + creamCount + "/3";
 }
 
 // gulps beverage, displays subtotal tax and total
@@ -174,4 +179,6 @@ function reset(){
     document.getElementById("subtotalLine").innerHTML = "";
     document.getElementById("taxLine").innerHTML = "";
     document.getElementById("totalLine").innerHTML = "";
+    document.getElementById("sugarButtonText").innerHTML = "ADD SUGAR";
+    document.getElementById("creamButtonText").innerHTML = "ADD CREAM";
 }
